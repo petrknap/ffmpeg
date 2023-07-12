@@ -1,5 +1,7 @@
 # Handy scripts for [ffmpeg]
 
+Remember to download [ffmpeg] to this folder.
+
 
 [ffmpeg]:https://ffmpeg.org/
 
