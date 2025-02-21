@@ -1,0 +1,4 @@
+set dir=%~dp0
+set file=%~1
+
+%dir%\ffmpeg.exe -i "%file%" -vf "[in] v360=input=fisheye:iv_fov=69.5:ih_fov=118.2:d_fov=133.6:output=flat:w=3200:h=1800 [defished]; [defished] crop=w=2520:h=1080 [out]" "%file%_gopro_hero5_169w.jpg"
