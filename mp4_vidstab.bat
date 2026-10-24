@@ -8,7 +8,7 @@ call %dir%\priority_low.bat ffmpeg
 
 call %dir%\priority_low.bat ffmpeg
 
-%dir%\ffmpeg.exe -i "%file%" -vf "[in] vidstabtransform=optalgo=gauss:interpol=no:smoothing=20:zoom=0:optzoom=0:crop=black:input='%trf_file%' [out]" -acodec copy "%file%_vidstab.mp4"
+%dir%\ffmpeg.exe -i "%file%" -vf "[in] vidstabtransform=optalgo=gauss:interpol=no:smoothing=30:zoom=0:optzoom=0:crop=black:input='%trf_file%' [out]" -acodec copy "%file%_vidstab.mp4"
 
 del "%trf_file%"
 
